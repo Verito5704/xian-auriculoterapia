@@ -814,8 +814,8 @@
             </div>
         </div>
         <div class="desc-section">
-            <span class="desc-title">Ubicación y función combinada</span>
-            <div id="protocol-desc" aria-live="polite"><div><b>Pulmón: </b>Respiratorio, piel, adicciones.</div><div><b>Corazón: </b>Circulación, ansiedad.</div><div><b>Riñón: </b>Huesos, audición.</div><div><b>Hígado: </b>Metabolismo, músculos.</div><div><b>Estómago: </b>Digestión, peso.</div><div><b>Bazo: </b>Sangre, digestión.</div><div><b>Vesícula: </b>Cálculos, migraña.</div><div><b>Páncreas: </b>Diabetes.</div><div><b>Vejiga: </b>Sistema urinario.</div><div><b>Intestino Grueso: </b>Digestivo.</div><div><b>Intestino Delgado: </b>Absorción, diarrea crónica, meteorismo.</div><div><b>Triple Recalentador: </b>Metabolismo general.</div><div><b>Cerebro (Concha): </b>Respiratorio, piel, adicciones.</div><div><b>Diafragma: </b>Hipo, espasmos respiratorios, ansiedad respiratoria.</div><div><b>Cardias: </b>...</div><div><b>Tiroides: </b>Hipotiroidismo, hipertiroidismo, bocio.</div><div><b>Útero / Genitales: </b>Disfunciones ginecológicas, menstruación, fertilidad.</div><div><b>Próstata / Genitales M: </b>Próstata, disfunción eréctil, genitales masculinos.</div><div><b>Ovario: </b>Función ovárica, dismenorrea, SOP, fertilidad femenina.</div><div><b>Pulmón 2: </b>tratar afecciones respiratorias, regular los líquidos corporales y calmar el sistema nervioso.</div></div>
+            <span class="desc-title" id="desc-section-title">Ubicación y función combinada</span>
+            <div id="protocol-desc" aria-live="polite" style="color:var(--text-muted);font-size:0.8rem;font-style:italic;padding:6px 4px;">Seleccioná un síntoma o protocolo para ver los puntos sugeridos.</div>
         </div>
 
         <!-- RESUMEN SESIÓN ACTIVA -->
@@ -3402,7 +3402,8 @@ const PROTOCOLOS = {
             document.getElementById('z-select').value = "";
             const checkboxes = document.querySelectorAll('#p-checklist input[type="checkbox"]:checked');
             document.querySelectorAll('.punto-marker').forEach(p => p.classList.remove('active'));
-            if (checkboxes.length === 0) { document.getElementById('protocol-desc').textContent = "Seleccione síntomas para calcular mapa terapéutico..."; return; }
+            if (checkboxes.length === 0) { document.getElementById('protocol-desc').innerHTML = '<span style="color:var(--text-muted);font-size:0.8rem;font-style:italic;">Seleccioná un síntoma o protocolo para ver los puntos sugeridos.</span>';
+        if (document.getElementById('desc-section-title')) document.getElementById('desc-section-title').textContent = 'Ubicación y función combinada'; return; }
             const puntosAActivar = {};
             checkboxes.forEach(cb => { const data = PROTOCOLOS[cb.value]; if (data) data.p.forEach(n => { if (!puntosAActivar[n]) puntosAActivar[n] = []; puntosAActivar[n].push(cb.value); }); });
             Object.keys(puntosAActivar).forEach(name => { const el = document.getElementById(`pt-${safeName(name)}`); if (el) el.classList.add('active'); });
@@ -3769,7 +3770,8 @@ const PROTOCOLOS = {
         document.querySelectorAll('.punto-marker.active').forEach(p => p.classList.remove('active'));
         document.querySelectorAll('#p-checklist input[type="checkbox"]').forEach(cb => cb.checked = false);
         document.getElementById('z-select').value = "";
-        document.getElementById('protocol-desc').textContent = "Seleccione síntomas para calcular mapa terapéutico...";
+        document.getElementById('protocol-desc').innerHTML = '<span style="color:var(--text-muted);font-size:0.8rem;font-style:italic;">Seleccioná un síntoma o protocolo para ver los puntos sugeridos.</span>';
+        if (document.getElementById('desc-section-title')) document.getElementById('desc-section-title').textContent = 'Ubicación y función combinada';
         updateSessionSummary();
         showToast('Puntos limpiados.', 'info');
     }
