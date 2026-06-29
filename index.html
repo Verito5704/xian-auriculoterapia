@@ -1,15 +1,8 @@
 <!DOCTYPE html>
 <html lang="es"><head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Xian Auriculoterapia</title>
-    <meta name="description" content="Ficha clínica y tratamiento de auriculoterapia">
-    <meta name="theme-color" content="#3d5c36">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Xian">
-    <link rel="manifest" href="manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xian — Auriculoterapia — Ficha médica y tratamiento</title>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -700,61 +693,6 @@
             </div>
         </div>
 
-        
-        <hr class="divider">
-        <div class="section-header" style="background:linear-gradient(135deg,#5b2d8e,#8e44ad);color:#fff;">🫁 Diagnóstico MTC</div>
-        <div class="mtc-diag-box">
-            <div>
-                <div class="mtc-diag-title">🫀 Pulso</div>
-                <div class="pulso-grid" id="pulso-grid">
-                    <div class="pulso-chip" onclick="toggleMTC(this,'pulso','Superficial')">🌊 Superficial</div>
-                    <div class="pulso-chip" onclick="toggleMTC(this,'pulso','Profundo')">⬇️ Profundo</div>
-                    <div class="pulso-chip" onclick="toggleMTC(this,'pulso','Rápido')">⚡ Rápido</div>
-                    <div class="pulso-chip" onclick="toggleMTC(this,'pulso','Lento')">🐢 Lento</div>
-                    <div class="pulso-chip" onclick="toggleMTC(this,'pulso','Tenso')">🪢 Tenso</div>
-                    <div class="pulso-chip" onclick="toggleMTC(this,'pulso','Resbaladizo')">🌀 Resbaladizo</div>
-                    <div class="pulso-chip" onclick="toggleMTC(this,'pulso','Débil')">🪶 Débil</div>
-                    <div class="pulso-chip" onclick="toggleMTC(this,'pulso','Lleno')">💪 Lleno</div>
-                    <div class="pulso-chip" onclick="toggleMTC(this,'pulso','Rugoso')">📎 Rugoso</div>
-                    <div class="pulso-chip" onclick="toggleMTC(this,'pulso','Irregular')">〰️ Irregular</div>
-                </div>
-            </div>
-            <div>
-                <div class="mtc-diag-title" style="margin-top:4px;">👅 Lengua — Cuerpo</div>
-                <div class="lengua-grid" id="lengua-cuerpo-grid">
-                    <div class="lengua-chip" onclick="toggleLengua(this,'cuerpo','Rojo','active-rojo')">🔴 Rojo</div>
-                    <div class="lengua-chip" onclick="toggleLengua(this,'cuerpo','Pálido','active-palido')">🌸 Pálido</div>
-                    <div class="lengua-chip" onclick="toggleLengua(this,'cuerpo','Morado','active-morado')">🟣 Morado</div>
-                    <div class="lengua-chip" onclick="toggleLengua(this,'cuerpo','Normal','active')">✅ Normal</div>
-                    <div class="lengua-chip" onclick="toggleLengua(this,'cuerpo','Hinchada','active')">🫧 Hinchada</div>
-                    <div class="lengua-chip" onclick="toggleLengua(this,'cuerpo','Agrietada','active')">⚡ Agrietada</div>
-                </div>
-            </div>
-            <div>
-                <div class="mtc-diag-title" style="margin-top:4px;">🧂 Lengua — Saburra</div>
-                <div class="lengua-grid" id="lengua-saburra-grid">
-                    <div class="lengua-chip" onclick="toggleLengua(this,'saburra','Blanca fina','active')">⚪ Blanca fina</div>
-                    <div class="lengua-chip" onclick="toggleLengua(this,'saburra','Blanca gruesa','active')">🔵 Blanca gruesa</div>
-                    <div class="lengua-chip" onclick="toggleLengua(this,'saburra','Amarilla','active-rojo')">🟡 Amarilla</div>
-                    <div class="lengua-chip" onclick="toggleLengua(this,'saburra','Gris-negra','active-morado')">⚫ Gris-negra</div>
-                    <div class="lengua-chip" onclick="toggleLengua(this,'saburra','Sin saburra','active')">🪨 Sin saburra</div>
-                </div>
-            </div>
-            <div>
-                <div class="mtc-diag-title" style="margin-top:4px;">⚖️ Patrón MTC (Ba Gang)</div>
-                <div class="lengua-grid" id="patron-grid">
-                    <div class="lengua-chip" onclick="toggleLengua(this,'patron','Vacío','active-palido')">📉 Vacío</div>
-                    <div class="lengua-chip" onclick="toggleLengua(this,'patron','Exceso','active-rojo')">📈 Exceso</div>
-                    <div class="lengua-chip" onclick="toggleLengua(this,'patron','Frío','active-morado')">❄️ Frío</div>
-                    <div class="lengua-chip" onclick="toggleLengua(this,'patron','Calor','active-rojo')">🔥 Calor</div>
-                    <div class="lengua-chip" onclick="toggleLengua(this,'patron','Yin','active-palido')">🌑 Yin</div>
-                    <div class="lengua-chip" onclick="toggleLengua(this,'patron','Yang','active-rojo')">☀️ Yang</div>
-                    <div class="lengua-chip" onclick="toggleLengua(this,'patron','Interior','active')">🏠 Interior</div>
-                    <div class="lengua-chip" onclick="toggleLengua(this,'patron','Exterior','active')">🌬️ Exterior</div>
-                </div>
-            </div>
-        </div>
-
 <hr class="divider">
         <div class="section-header dark">📊 Sesión Actual</div>
 
@@ -789,6 +727,73 @@
         <button class="btn btn-dark" onclick="saveToHistory()">💾 Guardar sesión</button>
         <button class="btn btn-accent" onclick="exportPDF()">📄 Generar PDF ficha</button>
         <button class="btn" onclick="limpiarHojaCompleta()" style="background:linear-gradient(135deg,#546e7a,#37474f);color:#fff;font-weight:700;display:flex;align-items:center;gap:6px;justify-content:center;">🧹 Limpiar hoja — nuevo paciente</button>
+
+        <!-- DASHBOARD -->
+        <hr class="divider">
+        <div class="section-header dark">📊 Dashboard del Consultorio</div>
+        <div class="dashboard" id="dashboard-container">
+            <div class="dash-stats" id="dash-stats">
+            <div class="dash-stat"><div class="ds-val">0</div><div class="ds-lbl">Sesiones totales</div></div>
+            <div class="dash-stat"><div class="ds-val">0</div><div class="ds-lbl">Pacientes</div></div>
+        </div>
+            <div>
+                <div style="font-size:0.7rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px;">🏆 Síntomas más frecuentes</div>
+                <div id="dash-top-sintomas"><div style="color:var(--text-muted);font-size:0.75rem;padding:4px 0;">Sin datos todavía</div></div>
+            </div>
+            <div>
+                <div style="font-size:0.7rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px;">🗓 Próximas citas</div>
+                <div id="dash-proximas" style="font-size:0.75rem;display:flex;flex-direction:column;gap:4px;"><div style="color:var(--text-muted);font-size:0.75rem;">Sin citas próximas</div></div>
+            </div>
+
+        </div>
+
+
+        <!-- EDITOR DE PUNTOS COLAPSABLE -->
+        <hr class="divider">
+        <button class="accordion-toggle" onclick="toggleAccordion()" id="accordion-btn" aria-expanded="false" aria-controls="accordion-body">
+            <span class="accordion-icon" id="accordion-icon">▶</span>
+            <span>⚙️ Coordenadas de puntos</span>
+        </button>
+        <div class="accordion-body" id="accordion-body" aria-hidden="true">
+            <div class="accordion-inner">
+                <div class="field">
+                    <label for="new-p-name">Nombre del punto</label>
+                    <input type="text" id="new-p-name" placeholder="Ej: Punto Nervioso">
+                </div>
+                <div class="field-row">
+                    <div class="field">
+                        <label for="new-p-y">Y — Altura (%)</label>
+                        <input type="number" id="new-p-y" step="0.1" oninput="updateTempMarkerFromInputs()">
+                    </div>
+                    <div class="field">
+                        <label for="new-p-x">X — Ancho (%)</label>
+                        <input type="number" id="new-p-x" step="0.1" oninput="updateTempMarkerFromInputs()">
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="new-p-desc">Descripción</label>
+                    <textarea id="new-p-desc"></textarea>
+                </div>
+                <div class="field-row">
+                    <div class="field">
+                        <label for="assoc-proto">Asociar a síntoma</label>
+                        <select id="assoc-proto"><option value="">Ninguno</option><option value="ACV (rehabilitación)">ACV (rehabilitación)</option><option value="ATM (articulación temporo)">ATM (articulación temporo)</option><option value="Acidez">Acidez</option><option value="Acné">Acné</option><option value="Activar circulación">Activar circulación</option><option value="Alcoholismo">Alcoholismo</option><option value="Alzheimer (acompañamiento)">Alzheimer (acompañamiento)</option><option value="Amigdalitis">Amigdalitis</option><option value="Analgesia dental (procedimiento)">Analgesia dental (procedimiento)</option><option value="Ansiedad">Ansiedad</option><option value="Antialérgicos">Antialérgicos</option><option value="Antidiarreico">Antidiarreico</option><option value="Antidiurético">Antidiurético</option><option value="Antiinfecciosos">Antiinfecciosos</option><option value="Antipiréticos">Antipiréticos</option><option value="Antirreumáticos">Antirreumáticos</option><option value="Arritmia">Arritmia</option><option value="Artritis reumatoidea">Artritis reumatoidea</option><option value="Artrosis">Artrosis</option><option value="Asma">Asma</option><option value="Ataques de pánico">Ataques de pánico</option><option value="Audición (tinnitus)">Audición (tinnitus)</option><option value="Aumentar FC">Aumentar FC</option><option value="Bruxismo">Bruxismo</option><option value="COVID secuelas">COVID secuelas</option><option value="Calambres">Calambres</option><option value="Cefalea tensional">Cefalea tensional</option><option value="Cistitis">Cistitis</option><option value="Ciática">Ciática</option><option value="Codo de tenista">Codo de tenista</option><option value="Colitis / enteritis">Colitis / enteritis</option><option value="Control de peso">Control de peso</option><option value="Convulsión">Convulsión</option><option value="Coxartrosis">Coxartrosis</option><option value="Cálculos biliares">Cálculos biliares</option><option value="Cálculos renales">Cálculos renales</option><option value="Depresión">Depresión</option><option value="Diabetes tipo 2">Diabetes tipo 2</option><option value="Disfagia / lengua">Disfagia / lengua</option><option value="Dismenorrea">Dismenorrea</option><option value="Disminuir FC">Disminuir FC</option><option value="Distensión abdominal">Distensión abdominal</option><option value="Diurético">Diurético</option><option value="Dolor">Dolor</option><option value="Dolor crónico">Dolor crónico</option><option value="Dolor de espalda">Dolor de espalda</option><option value="Dolor de garganta">Dolor de garganta</option><option value="Dolor de hombro">Dolor de hombro</option><option value="Dolor dental">Dolor dental</option><option value="Dolor neuropático">Dolor neuropático</option><option value="Drenaje vesicular">Drenaje vesicular</option><option value="Drogas">Drogas</option><option value="EPOC">EPOC</option><option value="Eccema / dermatitis">Eccema / dermatitis</option><option value="Embarazo (malestar)">Embarazo (malestar)</option><option value="Epistaxis">Epistaxis</option><option value="Esclerosis múltiple (acompañamiento)">Esclerosis múltiple (acompañamiento)</option><option value="Espasmos musculares">Espasmos musculares</option><option value="Estrés postraumático">Estrés postraumático</option><option value="Faringitis">Faringitis</option><option value="Fascitis plantar">Fascitis plantar</option><option value="Fatiga crónica">Fatiga crónica</option><option value="Fertilidad (apoyo)">Fertilidad (apoyo)</option><option value="Fibromialgia">Fibromialgia</option><option value="Fobias">Fobias</option><option value="Fortalecer Bazo">Fortalecer Bazo</option><option value="Fortalecer Riñón">Fortalecer Riñón</option><option value="Garganta">Garganta</option><option value="Gastritis">Gastritis</option><option value="Gonalgia">Gonalgia</option><option value="Gota">Gota</option><option value="Hemorroides">Hemorroides</option><option value="Hemostático">Hemostático</option><option value="Herpes labial">Herpes labial</option><option value="Herpes zóster">Herpes zóster</option><option value="Hiperhidrosis">Hiperhidrosis</option><option value="Hipertensivo">Hipertensivo</option><option value="Hipertiroidismo">Hipertiroidismo</option><option value="Hipoglucemia">Hipoglucemia</option><option value="Hipotensivo">Hipotensivo</option><option value="Hipotiroidismo">Hipotiroidismo</option><option value="Hígado graso">Hígado graso</option><option value="Incontinencia urinaria">Incontinencia urinaria</option><option value="Irritabilidad">Irritabilidad</option><option value="Lactancia">Lactancia</option><option value="Laringitis">Laringitis</option><option value="Laxante">Laxante</option><option value="Leucorrea">Leucorrea</option><option value="Linfedema">Linfedema</option><option value="Manía">Manía</option><option value="Memoria y concentración">Memoria y concentración</option><option value="Menopausia">Menopausia</option><option value="Migraña">Migraña</option><option value="Nariz">Nariz</option><option value="Nerviosismo / agitación">Nerviosismo / agitación</option><option value="Neuralgia Arnold">Neuralgia Arnold</option><option value="Neuralgia trigémino">Neuralgia trigémino</option><option value="Náuseas matutinas">Náuseas matutinas</option><option value="Obesidad / metabolismo">Obesidad / metabolismo</option><option value="Olfato (anosmia/parosmia)">Olfato (anosmia/parosmia)</option><option value="Osteoporosis">Osteoporosis</option><option value="Oído externo (otitis externa)">Oído externo (otitis externa)</option><option value="Palpitaciones">Palpitaciones</option><option value="Parkinson (acompañamiento)">Parkinson (acompañamiento)</option><option value="Parálisis facial">Parálisis facial</option><option value="Prurito (picazón)">Prurito (picazón)</option><option value="Próstata (apoyo)">Próstata (apoyo)</option><option value="Psoriasis">Psoriasis</option><option value="Rinitis">Rinitis</option><option value="Rinitis alérgica">Rinitis alérgica</option><option value="Ronquera">Ronquera</option><option value="Sinusitis">Sinusitis</option><option value="Sueño (somnífero)">Sueño (somnífero)</option><option value="Síndrome intestino irritable">Síndrome intestino irritable</option><option value="Síndrome premenstrual">Síndrome premenstrual</option><option value="TOC (acompañamiento)">TOC (acompañamiento)</option><option value="Tabaquismo">Tabaquismo</option><option value="Tortícolis">Tortícolis</option><option value="Tos">Tos</option><option value="Trastorno bipolar (acompañamiento)">Trastorno bipolar (acompañamiento)</option><option value="Trastornos psicosomáticos">Trastornos psicosomáticos</option><option value="Túnel carpiano">Túnel carpiano</option><option value="Urticaria">Urticaria</option><option value="Varices">Varices</option><option value="Visión">Visión</option><option value="Vértigo">Vértigo</option><option value="Vómitos">Vómitos</option><option value="Úlcera gástrica">Úlcera gástrica</option></select>
+                    </div>
+                    <div class="field">
+                        <label for="assoc-zona">Asociar a zona</label>
+                        <select id="assoc-zona"><option value="">Ninguna</option><option value="z1">I. Puntos Maestros</option><option value="z2">II. Hélix y Puntos Libres</option><option value="z3">III. Trago</option><option value="z4">IV. Zonas del Pabellón (Z1–Z9)</option><option value="z5">V. Antihélix (Columna)</option><option value="z6">VI. Fosa Escafoidea (M. Superior)</option><option value="z6b">VI-b. Fosa Triangular (M. Inferior)</option><option value="z7">VII. Antitrago</option><option value="z8">VIII. Órganos Internos (Concha)</option><option value="z9">IX. ORL — Cara</option><option value="z11">XI. Puntos de Nogier</option></select>
+                    </div>
+                </div>
+                <button class="btn btn-accent" onclick="addNewPoint()">➕ Registrar / actualizar punto</button>
+                <div class="field" id="generated-code-field" style="display: block;">
+                    <label>Código generado</label>
+                    <div id="generated-code" class="code-output" aria-live="polite">"Hélix 6": { pos: [62.5, 49.1], desc: "Se utiliza como punto de refuerzo general para limpiar toxinas del cuerpo, calmar el sistema nervioso y potenciar la acción antiinflamatoria de los puntos anteriores" },</div>
+                </div>
+                <hr class="divider">
+                <label>Puntos guardados</label>
+                <div id="custom-list-container" class="custom-list" role="list"><div class="custom-item" role="listitem"><span style="cursor: pointer; flex: 1 1 0%;">📍 Hélix 1</span><button class="btn btn-ghost btn-sm" aria-label="Editar Hélix 1" style="margin-right: 4px;">✎</button><button class="btn-danger" aria-label="Eliminar Hélix 1">×</button></div><div class="custom-item" role="listitem"><span style="cursor: pointer; flex: 1 1 0%;">📍 Hélix 2</span><button class="btn btn-ghost btn-sm" aria-label="Editar Hélix 2" style="margin-right: 4px;">✎</button><button class="btn-danger" aria-label="Eliminar Hélix 2">×</button></div><div class="custom-item" role="listitem"><span style="cursor: pointer; flex: 1 1 0%;">📍 Hélix 3</span><button class="btn btn-ghost btn-sm" aria-label="Editar Hélix 3" style="margin-right: 4px;">✎</button><button class="btn-danger" aria-label="Eliminar Hélix 3">×</button></div><div class="custom-item" role="listitem"><span style="cursor: pointer; flex: 1 1 0%;">📍 Hélix 4</span><button class="btn btn-ghost btn-sm" aria-label="Editar Hélix 4" style="margin-right: 4px;">✎</button><button class="btn-danger" aria-label="Eliminar Hélix 4">×</button></div><div class="custom-item" role="listitem"><span style="cursor: pointer; flex: 1 1 0%;">📍 Hélix 5</span><button class="btn btn-ghost btn-sm" aria-label="Editar Hélix 5" style="margin-right: 4px;">✎</button><button class="btn-danger" aria-label="Eliminar Hélix 5">×</button></div><div class="custom-item" role="listitem"><span style="cursor: pointer; flex: 1 1 0%;">📍 Pulmón 2</span><button class="btn btn-ghost btn-sm" aria-label="Editar Pulmón 2" style="margin-right: 4px;">✎</button><button class="btn-danger" aria-label="Eliminar Pulmón 2">×</button></div></div>
+            </div>
+        </div>
 
     </aside>
 
@@ -886,6 +891,76 @@
         </div>
 
         <!-- FLORES DE BACH — MÓDULO DE SÍNTOMAS -->
+
+        <!-- DIAGNÓSTICO MTC -->
+        <hr class="divider">
+        <button class="accordion-toggle" onclick="toggleMTCAccordion()" id="accordion-mtc-btn" aria-expanded="false" aria-controls="accordion-mtc-body" style="background:linear-gradient(135deg,#f0e8ff,#e8d5ff);color:#5b2d8e;border-color:#c9aff0;">
+            <span class="accordion-icon" id="accordion-mtc-icon">▶</span>
+            🫁 Diagnóstico MTC
+        </button>
+        <div class="accordion-body" id="accordion-mtc-body" aria-hidden="true">
+            <div class="accordion-inner" style="padding-top:6px;">
+            <div>
+                <div class="mtc-diag-title">🫀 Pulso</div>
+                <div class="pulso-grid" id="pulso-grid">
+                    <div class="pulso-chip" onclick="toggleMTC(this,'pulso','Superficial')">🌊 Superficial</div>
+                    <div class="pulso-chip" onclick="toggleMTC(this,'pulso','Profundo')">⬇️ Profundo</div>
+                    <div class="pulso-chip" onclick="toggleMTC(this,'pulso','Rápido')">⚡ Rápido</div>
+                    <div class="pulso-chip" onclick="toggleMTC(this,'pulso','Lento')">🐢 Lento</div>
+                    <div class="pulso-chip" onclick="toggleMTC(this,'pulso','Tenso')">🪢 Tenso</div>
+                    <div class="pulso-chip" onclick="toggleMTC(this,'pulso','Resbaladizo')">🌀 Resbaladizo</div>
+                    <div class="pulso-chip" onclick="toggleMTC(this,'pulso','Débil')">🪶 Débil</div>
+                    <div class="pulso-chip" onclick="toggleMTC(this,'pulso','Lleno')">💪 Lleno</div>
+                    <div class="pulso-chip" onclick="toggleMTC(this,'pulso','Rugoso')">📎 Rugoso</div>
+                    <div class="pulso-chip" onclick="toggleMTC(this,'pulso','Irregular')">〰️ Irregular</div>
+                </div>
+            </div>
+            <div>
+                <div class="mtc-diag-title" style="margin-top:4px;">👅 Lengua — Cuerpo</div>
+                <div class="lengua-grid" id="lengua-cuerpo-grid">
+                    <div class="lengua-chip" onclick="toggleLengua(this,'cuerpo','Rojo','active-rojo')">🔴 Rojo</div>
+                    <div class="lengua-chip" onclick="toggleLengua(this,'cuerpo','Pálido','active-palido')">🌸 Pálido</div>
+                    <div class="lengua-chip" onclick="toggleLengua(this,'cuerpo','Morado','active-morado')">🟣 Morado</div>
+                    <div class="lengua-chip" onclick="toggleLengua(this,'cuerpo','Normal','active')">✅ Normal</div>
+                    <div class="lengua-chip" onclick="toggleLengua(this,'cuerpo','Hinchada','active')">🫧 Hinchada</div>
+                    <div class="lengua-chip" onclick="toggleLengua(this,'cuerpo','Agrietada','active')">⚡ Agrietada</div>
+                </div>
+            </div>
+            <div>
+                <div class="mtc-diag-title" style="margin-top:4px;">🧂 Lengua — Saburra</div>
+                <div class="lengua-grid" id="lengua-saburra-grid">
+                    <div class="lengua-chip" onclick="toggleLengua(this,'saburra','Blanca fina','active')">⚪ Blanca fina</div>
+                    <div class="lengua-chip" onclick="toggleLengua(this,'saburra','Blanca gruesa','active')">🔵 Blanca gruesa</div>
+                    <div class="lengua-chip" onclick="toggleLengua(this,'saburra','Amarilla','active-rojo')">🟡 Amarilla</div>
+                    <div class="lengua-chip" onclick="toggleLengua(this,'saburra','Gris-negra','active-morado')">⚫ Gris-negra</div>
+                    <div class="lengua-chip" onclick="toggleLengua(this,'saburra','Sin saburra','active')">🪨 Sin saburra</div>
+                </div>
+            </div>
+            <div>
+                <div class="mtc-diag-title" style="margin-top:4px;">⚖️ Patrón MTC (Ba Gang)</div>
+                <div class="lengua-grid" id="patron-grid">
+                    <div class="lengua-chip" onclick="toggleLengua(this,'patron','Vacío','active-palido')">📉 Vacío</div>
+                    <div class="lengua-chip" onclick="toggleLengua(this,'patron','Exceso','active-rojo')">📈 Exceso</div>
+                    <div class="lengua-chip" onclick="toggleLengua(this,'patron','Frío','active-morado')">❄️ Frío</div>
+                    <div class="lengua-chip" onclick="toggleLengua(this,'patron','Calor','active-rojo')">🔥 Calor</div>
+                    <div class="lengua-chip" onclick="toggleLengua(this,'patron','Yin','active-palido')">🌑 Yin</div>
+                    <div class="lengua-chip" onclick="toggleLengua(this,'patron','Yang','active-rojo')">☀️ Yang</div>
+                    <div class="lengua-chip" onclick="toggleLengua(this,'patron','Interior','active')">🏠 Interior</div>
+                    <div class="lengua-chip" onclick="toggleLengua(this,'patron','Exterior','active')">🌬️ Exterior</div>
+                </div>
+
+                <!-- DIAGNÓSTICO IA MTC -->
+                <div style="margin-top:8px;">
+                    <button onclick="generarDiagnosticoMTC()" style="width:100%;padding:9px 12px;background:linear-gradient(135deg,#5b2d8e,#8e44ad);color:#fff;border:none;border-radius:var(--radius-sm);font-size:0.8rem;font-weight:700;cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:6px;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+                        🧠 Generar diagnóstico MTC con IA
+                    </button>
+                    <div id="mtc-diag-resultado" style="display:none;margin-top:8px;padding:10px 12px;background:#f5f0ff;border:1px solid #c9aff0;border-radius:var(--radius-sm);font-size:0.78rem;line-height:1.55;color:#2c2c2c;"></div>
+                </div>
+            </div>
+        </div>
+
+            </div>
+        </div>
         <hr class="divider">
         <button class="accordion-toggle" onclick="toggleFloresAccordion()" id="accordion-flores-btn" aria-expanded="false" aria-controls="accordion-flores-body" style="background:linear-gradient(135deg,#fce4ec,#f8bbd0);color:#bf360c;border-color:#f48fb1;">
             <span class="accordion-icon" id="accordion-flores-icon">▶</span>
@@ -925,72 +1000,6 @@
             </div>
         </div>
         </div></div>
-
-        <!-- DASHBOARD -->
-        <hr class="divider">
-        <div class="section-header dark">📊 Dashboard del Consultorio</div>
-        <div class="dashboard" id="dashboard-container">
-            <div class="dash-stats" id="dash-stats">
-            <div class="dash-stat"><div class="ds-val">0</div><div class="ds-lbl">Sesiones totales</div></div>
-            <div class="dash-stat"><div class="ds-val">0</div><div class="ds-lbl">Pacientes</div></div>
-        </div>
-            <div>
-                <div style="font-size:0.7rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px;">🏆 Síntomas más frecuentes</div>
-                <div id="dash-top-sintomas"><div style="color:var(--text-muted);font-size:0.75rem;padding:4px 0;">Sin datos todavía</div></div>
-            </div>
-            <div>
-                <div style="font-size:0.7rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px;">🗓 Próximas citas</div>
-                <div id="dash-proximas" style="font-size:0.75rem;display:flex;flex-direction:column;gap:4px;"><div style="color:var(--text-muted);font-size:0.75rem;">Sin citas próximas</div></div>
-            </div>
-
-        </div>
-
-        <!-- EDITOR DE PUNTOS COLAPSABLE -->
-        <hr class="divider">
-        <button class="accordion-toggle" onclick="toggleAccordion()" id="accordion-btn" aria-expanded="true" aria-controls="accordion-body">
-            <span class="accordion-icon" id="accordion-icon">▶</span>
-            <span>⚙️ Coordenadas de puntos</span>
-        </button>
-        <div class="accordion-body open" id="accordion-body" aria-hidden="false">
-            <div class="accordion-inner">
-                <div class="field">
-                    <label for="new-p-name">Nombre del punto</label>
-                    <input type="text" id="new-p-name" placeholder="Ej: Punto Nervioso">
-                </div>
-                <div class="field-row">
-                    <div class="field">
-                        <label for="new-p-y">Y — Altura (%)</label>
-                        <input type="number" id="new-p-y" step="0.1" oninput="updateTempMarkerFromInputs()">
-                    </div>
-                    <div class="field">
-                        <label for="new-p-x">X — Ancho (%)</label>
-                        <input type="number" id="new-p-x" step="0.1" oninput="updateTempMarkerFromInputs()">
-                    </div>
-                </div>
-                <div class="field">
-                    <label for="new-p-desc">Descripción</label>
-                    <textarea id="new-p-desc"></textarea>
-                </div>
-                <div class="field-row">
-                    <div class="field">
-                        <label for="assoc-proto">Asociar a síntoma</label>
-                        <select id="assoc-proto"><option value="">Ninguno</option><option value="ACV (rehabilitación)">ACV (rehabilitación)</option><option value="ATM (articulación temporo)">ATM (articulación temporo)</option><option value="Acidez">Acidez</option><option value="Acné">Acné</option><option value="Activar circulación">Activar circulación</option><option value="Alcoholismo">Alcoholismo</option><option value="Alzheimer (acompañamiento)">Alzheimer (acompañamiento)</option><option value="Amigdalitis">Amigdalitis</option><option value="Analgesia dental (procedimiento)">Analgesia dental (procedimiento)</option><option value="Ansiedad">Ansiedad</option><option value="Antialérgicos">Antialérgicos</option><option value="Antidiarreico">Antidiarreico</option><option value="Antidiurético">Antidiurético</option><option value="Antiinfecciosos">Antiinfecciosos</option><option value="Antipiréticos">Antipiréticos</option><option value="Antirreumáticos">Antirreumáticos</option><option value="Arritmia">Arritmia</option><option value="Artritis reumatoidea">Artritis reumatoidea</option><option value="Artrosis">Artrosis</option><option value="Asma">Asma</option><option value="Ataques de pánico">Ataques de pánico</option><option value="Audición (tinnitus)">Audición (tinnitus)</option><option value="Aumentar FC">Aumentar FC</option><option value="Bruxismo">Bruxismo</option><option value="COVID secuelas">COVID secuelas</option><option value="Calambres">Calambres</option><option value="Cefalea tensional">Cefalea tensional</option><option value="Cistitis">Cistitis</option><option value="Ciática">Ciática</option><option value="Codo de tenista">Codo de tenista</option><option value="Colitis / enteritis">Colitis / enteritis</option><option value="Control de peso">Control de peso</option><option value="Convulsión">Convulsión</option><option value="Coxartrosis">Coxartrosis</option><option value="Cálculos biliares">Cálculos biliares</option><option value="Cálculos renales">Cálculos renales</option><option value="Depresión">Depresión</option><option value="Diabetes tipo 2">Diabetes tipo 2</option><option value="Disfagia / lengua">Disfagia / lengua</option><option value="Dismenorrea">Dismenorrea</option><option value="Disminuir FC">Disminuir FC</option><option value="Distensión abdominal">Distensión abdominal</option><option value="Diurético">Diurético</option><option value="Dolor">Dolor</option><option value="Dolor crónico">Dolor crónico</option><option value="Dolor de espalda">Dolor de espalda</option><option value="Dolor de garganta">Dolor de garganta</option><option value="Dolor de hombro">Dolor de hombro</option><option value="Dolor dental">Dolor dental</option><option value="Dolor neuropático">Dolor neuropático</option><option value="Drenaje vesicular">Drenaje vesicular</option><option value="Drogas">Drogas</option><option value="EPOC">EPOC</option><option value="Eccema / dermatitis">Eccema / dermatitis</option><option value="Embarazo (malestar)">Embarazo (malestar)</option><option value="Epistaxis">Epistaxis</option><option value="Esclerosis múltiple (acompañamiento)">Esclerosis múltiple (acompañamiento)</option><option value="Espasmos musculares">Espasmos musculares</option><option value="Estrés postraumático">Estrés postraumático</option><option value="Faringitis">Faringitis</option><option value="Fascitis plantar">Fascitis plantar</option><option value="Fatiga crónica">Fatiga crónica</option><option value="Fertilidad (apoyo)">Fertilidad (apoyo)</option><option value="Fibromialgia">Fibromialgia</option><option value="Fobias">Fobias</option><option value="Fortalecer Bazo">Fortalecer Bazo</option><option value="Fortalecer Riñón">Fortalecer Riñón</option><option value="Garganta">Garganta</option><option value="Gastritis">Gastritis</option><option value="Gonalgia">Gonalgia</option><option value="Gota">Gota</option><option value="Hemorroides">Hemorroides</option><option value="Hemostático">Hemostático</option><option value="Herpes labial">Herpes labial</option><option value="Herpes zóster">Herpes zóster</option><option value="Hiperhidrosis">Hiperhidrosis</option><option value="Hipertensivo">Hipertensivo</option><option value="Hipertiroidismo">Hipertiroidismo</option><option value="Hipoglucemia">Hipoglucemia</option><option value="Hipotensivo">Hipotensivo</option><option value="Hipotiroidismo">Hipotiroidismo</option><option value="Hígado graso">Hígado graso</option><option value="Incontinencia urinaria">Incontinencia urinaria</option><option value="Irritabilidad">Irritabilidad</option><option value="Lactancia">Lactancia</option><option value="Laringitis">Laringitis</option><option value="Laxante">Laxante</option><option value="Leucorrea">Leucorrea</option><option value="Linfedema">Linfedema</option><option value="Manía">Manía</option><option value="Memoria y concentración">Memoria y concentración</option><option value="Menopausia">Menopausia</option><option value="Migraña">Migraña</option><option value="Nariz">Nariz</option><option value="Nerviosismo / agitación">Nerviosismo / agitación</option><option value="Neuralgia Arnold">Neuralgia Arnold</option><option value="Neuralgia trigémino">Neuralgia trigémino</option><option value="Náuseas matutinas">Náuseas matutinas</option><option value="Obesidad / metabolismo">Obesidad / metabolismo</option><option value="Olfato (anosmia/parosmia)">Olfato (anosmia/parosmia)</option><option value="Osteoporosis">Osteoporosis</option><option value="Oído externo (otitis externa)">Oído externo (otitis externa)</option><option value="Palpitaciones">Palpitaciones</option><option value="Parkinson (acompañamiento)">Parkinson (acompañamiento)</option><option value="Parálisis facial">Parálisis facial</option><option value="Prurito (picazón)">Prurito (picazón)</option><option value="Próstata (apoyo)">Próstata (apoyo)</option><option value="Psoriasis">Psoriasis</option><option value="Rinitis">Rinitis</option><option value="Rinitis alérgica">Rinitis alérgica</option><option value="Ronquera">Ronquera</option><option value="Sinusitis">Sinusitis</option><option value="Sueño (somnífero)">Sueño (somnífero)</option><option value="Síndrome intestino irritable">Síndrome intestino irritable</option><option value="Síndrome premenstrual">Síndrome premenstrual</option><option value="TOC (acompañamiento)">TOC (acompañamiento)</option><option value="Tabaquismo">Tabaquismo</option><option value="Tortícolis">Tortícolis</option><option value="Tos">Tos</option><option value="Trastorno bipolar (acompañamiento)">Trastorno bipolar (acompañamiento)</option><option value="Trastornos psicosomáticos">Trastornos psicosomáticos</option><option value="Túnel carpiano">Túnel carpiano</option><option value="Urticaria">Urticaria</option><option value="Varices">Varices</option><option value="Visión">Visión</option><option value="Vértigo">Vértigo</option><option value="Vómitos">Vómitos</option><option value="Úlcera gástrica">Úlcera gástrica</option></select>
-                    </div>
-                    <div class="field">
-                        <label for="assoc-zona">Asociar a zona</label>
-                        <select id="assoc-zona"><option value="">Ninguna</option><option value="z1">I. Puntos Maestros</option><option value="z2">II. Hélix y Puntos Libres</option><option value="z3">III. Trago</option><option value="z4">IV. Zonas del Pabellón (Z1–Z9)</option><option value="z5">V. Antihélix (Columna)</option><option value="z6">VI. Fosa Escafoidea (M. Superior)</option><option value="z6b">VI-b. Fosa Triangular (M. Inferior)</option><option value="z7">VII. Antitrago</option><option value="z8">VIII. Órganos Internos (Concha)</option><option value="z9">IX. ORL — Cara</option><option value="z11">XI. Puntos de Nogier</option></select>
-                    </div>
-                </div>
-                <button class="btn btn-accent" onclick="addNewPoint()">➕ Registrar / actualizar punto</button>
-                <div class="field" id="generated-code-field" style="display: block;">
-                    <label>Código generado</label>
-                    <div id="generated-code" class="code-output" aria-live="polite">"Hélix 6": { pos: [62.5, 49.1], desc: "Se utiliza como punto de refuerzo general para limpiar toxinas del cuerpo, calmar el sistema nervioso y potenciar la acción antiinflamatoria de los puntos anteriores" },</div>
-                </div>
-                <hr class="divider">
-                <label>Puntos guardados</label>
-                <div id="custom-list-container" class="custom-list" role="list"><div class="custom-item" role="listitem"><span style="cursor: pointer; flex: 1 1 0%;">📍 Hélix 1</span><button class="btn btn-ghost btn-sm" aria-label="Editar Hélix 1" style="margin-right: 4px;">✎</button><button class="btn-danger" aria-label="Eliminar Hélix 1">×</button></div><div class="custom-item" role="listitem"><span style="cursor: pointer; flex: 1 1 0%;">📍 Hélix 2</span><button class="btn btn-ghost btn-sm" aria-label="Editar Hélix 2" style="margin-right: 4px;">✎</button><button class="btn-danger" aria-label="Eliminar Hélix 2">×</button></div><div class="custom-item" role="listitem"><span style="cursor: pointer; flex: 1 1 0%;">📍 Hélix 3</span><button class="btn btn-ghost btn-sm" aria-label="Editar Hélix 3" style="margin-right: 4px;">✎</button><button class="btn-danger" aria-label="Eliminar Hélix 3">×</button></div><div class="custom-item" role="listitem"><span style="cursor: pointer; flex: 1 1 0%;">📍 Hélix 4</span><button class="btn btn-ghost btn-sm" aria-label="Editar Hélix 4" style="margin-right: 4px;">✎</button><button class="btn-danger" aria-label="Eliminar Hélix 4">×</button></div><div class="custom-item" role="listitem"><span style="cursor: pointer; flex: 1 1 0%;">📍 Hélix 5</span><button class="btn btn-ghost btn-sm" aria-label="Editar Hélix 5" style="margin-right: 4px;">✎</button><button class="btn-danger" aria-label="Eliminar Hélix 5">×</button></div><div class="custom-item" role="listitem"><span style="cursor: pointer; flex: 1 1 0%;">📍 Pulmón 2</span><button class="btn btn-ghost btn-sm" aria-label="Editar Pulmón 2" style="margin-right: 4px;">✎</button><button class="btn-danger" aria-label="Eliminar Pulmón 2">×</button></div></div>
-            </div>
-        </div>
 
     </div>
 </div></main>
@@ -3688,6 +3697,18 @@ const PROTOCOLOS = {
         body.setAttribute('aria-hidden', !isOpen);
     }
 
+    function toggleMTCAccordion() {
+        const btn  = document.getElementById('accordion-mtc-btn');
+        const body = document.getElementById('accordion-mtc-body');
+        const icon = document.getElementById('accordion-mtc-icon');
+        const open = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!open));
+        body.setAttribute('aria-hidden', String(open));
+        if (!open) { body.classList.add('open'); icon.textContent = '▼'; }
+        else        { body.classList.remove('open'); icon.textContent = '▶'; }
+    }
+
+
     function toggleTecnicasAccordion() {
         const btn  = document.getElementById('accordion-tec-btn');
         const body = document.getElementById('accordion-tec-body');
@@ -5670,6 +5691,237 @@ const PROTOCOLOS = {
 
 <script>
 
+/* ══════════════════════════════════════════════════════
+   BASE DE CONOCIMIENTO MTC — DIAGNÓSTICO LOCAL
+   Combina: pulso + cuerpo lengua + saburra + patrón Ba Gang
+   ══════════════════════════════════════════════════════ */
+
+const MTC_PATRONES = [
+
+  /* ── DEFICIENCIA DE YIN ── */
+  { id: 'yin_xu',
+    nombre: 'Deficiencia de Yin',
+    organos: 'Riñón, Hígado (y secundariamente Corazón y Pulmón)',
+    match: { cuerpo:['Rojo','Agrietada'], saburra:['Sin saburra'], patron:['Vacío','Yin'], pulso:['Rápido','Rugoso'] },
+    peso: { cuerpo:3, saburra:3, patron:2, pulso:2 },
+    principio: 'Nutrir el Yin, apagar el Fuego vacío, calmar el Shen.',
+    tratamiento: 'Puntos auriculares: Riñón, Corazón, Shen Men, Punto ZERO, Máster Endocrino. Acupuntura: KI 3, KI 6, SP 6, HT 6. Moxibustión contraindicada.',
+    recomendaciones: 'Evitar alimentos picantes, alcohol y tabaco. Favorecer alimentos que nutren el Yin: pera, sésamo, leche, tofu, miel. Descanso adecuado, evitar trasnochar. Meditación y Qi Gong suave.' },
+
+  /* ── DEFICIENCIA DE YANG ── */
+  { id: 'yang_xu',
+    nombre: 'Deficiencia de Yang (Riñón / Bazo)',
+    organos: 'Riñón Yang, Bazo Yang',
+    match: { cuerpo:['Pálido','Hinchada'], saburra:['Blanca fina','Blanca gruesa'], patron:['Vacío','Frío','Yin'], pulso:['Lento','Débil'] },
+    peso: { cuerpo:3, saburra:2, patron:3, pulso:3 },
+    principio: 'Tonificar y calentar el Yang, fortalecer el Fuego de la Puerta de la Vida (Ming Men).',
+    tratamiento: 'Puntos auriculares: Riñón, Bazo, Máster Endocrino, Punto ZERO, Shen Men. Moxibustión indicada (CV 4, CV 6, KI 3, BL 23). Acupuntura: ST 36, SP 6, BL 23.',
+    recomendaciones: 'Alimentos cálidos y cocidos: jengibre, canela, nueces, ajo, cordero. Evitar crudos, fríos y lácteos. Abrigarse, especialmente zona lumbar. Ejercicio moderado al sol.' },
+
+  /* ── ESTANCAMIENTO DE QI DE HÍGADO ── */
+  { id: 'higado_qi_xu',
+    nombre: 'Estancamiento de Qi de Hígado',
+    organos: 'Hígado, secundariamente Bazo y Estómago',
+    match: { cuerpo:['Normal','Morado'], saburra:['Blanca fina'], patron:['Exceso','Interior'], pulso:['Tenso'] },
+    peso: { cuerpo:2, saburra:1, patron:3, pulso:4 },
+    principio: 'Mover y regular el Qi de Hígado, aliviar la congestión emocional.',
+    tratamiento: 'Puntos auriculares: Hígado, Shen Men, Punto ZERO, Máster Tranquilizante, Corazón. Acupuntura: LV 3, LV 14, PC 6, ST 36, GB 34.',
+    recomendaciones: 'Manejo del estrés: meditación, tai chi, yoga. Evitar alcohol y comidas grasas. Alimentos que mueven el Qi: cúrcuma, vinagre de manzana, naranja. Expresar emociones, evitar represión.' },
+
+  /* ── CALOR DE HÍGADO / FUEGO DE HÍGADO ── */
+  { id: 'higado_fuego',
+    nombre: 'Fuego de Hígado ascendente',
+    organos: 'Hígado, Vesícula Biliar, Corazón',
+    match: { cuerpo:['Rojo'], saburra:['Amarilla'], patron:['Exceso','Calor','Yang','Interior'], pulso:['Rápido','Tenso','Lleno'] },
+    peso: { cuerpo:3, saburra:3, patron:3, pulso:3 },
+    principio: 'Drenar y sedas el Fuego de Hígado, calmar el Yang ascendente.',
+    tratamiento: 'Puntos auriculares: Hígado, Vesícula, Ápice oreja (sangría), Shen Men, Corazón, Máster Tálamo. Acupuntura: LV 2, GB 20, LI 11, GV 20.',
+    recomendaciones: 'Evitar alimentos picantes, alcohol, frituras y carnes rojas en exceso. Favorecer: apio, pepino, menta, algas, zanahoria. Gestión de ira y frustración. Actividad física aeróbica moderada.' },
+
+  /* ── HUMEDAD-CALOR ── */
+  { id: 'humedad_calor',
+    nombre: 'Humedad-Calor (Bazo / Hígado-Vesícula)',
+    organos: 'Bazo, Estómago, Hígado, Vesícula Biliar',
+    match: { cuerpo:['Rojo','Normal'], saburra:['Amarilla','Blanca gruesa'], patron:['Exceso','Calor','Interior'], pulso:['Rápido','Resbaladizo'] },
+    peso: { cuerpo:2, saburra:4, patron:3, pulso:3 },
+    principio: 'Drenar la Humedad, limpiar el Calor, fortalecer el Bazo.',
+    tratamiento: 'Puntos auriculares: Bazo, Hígado, Estómago, Máster Endocrino, Punto ZERO. Acupuntura: SP 9, SP 6, LI 11, ST 44, GB 34.',
+    recomendaciones: 'Eliminar lácteos, azúcares refinados, alcohol, frituras y comidas pesadas. Favorecer: cebada, mung beans, té de cebada, vegetales amargos. Ambiente seco y ventilado. Evitar humedad.' },
+
+  /* ── DEFICIENCIA DE QI Y SANGRE ── */
+  { id: 'qi_xue_xu',
+    nombre: 'Deficiencia de Qi y Sangre',
+    organos: 'Corazón, Bazo, Hígado',
+    match: { cuerpo:['Pálido'], saburra:['Blanca fina','Sin saburra'], patron:['Vacío'], pulso:['Débil','Rugoso','Lento'] },
+    peso: { cuerpo:4, saburra:2, patron:3, pulso:3 },
+    principio: 'Tonificar el Qi y nutrir la Sangre, fortalecer Corazón y Bazo.',
+    tratamiento: 'Puntos auriculares: Corazón, Bazo, Shen Men, Punto ZERO, Máster Cerebral. Moxibustión: ST 36, SP 6, BL 17, BL 20. Acupuntura: HT 7, PC 6, SP 10.',
+    recomendaciones: 'Alimentos que tonifican la Sangre: dátiles rojos (hong zao), espinaca, remolacha, hígado de pollo, nueces. Descanso suficiente. Evitar ejercicio extenuante. Incorporar técnicas de relajación.' },
+
+  /* ── ESTASIS DE SANGRE ── */
+  { id: 'xue_yu',
+    nombre: 'Estasis de Sangre',
+    organos: 'Corazón, Hígado, útero (en mujeres)',
+    match: { cuerpo:['Morado'], saburra:['Blanca fina','Gris-negra'], patron:['Exceso','Interior'], pulso:['Rugoso','Tenso','Irregular'] },
+    peso: { cuerpo:5, saburra:2, patron:2, pulso:3 },
+    principio: 'Mover y activar la Sangre, eliminar la Estasis, aliviar el dolor.',
+    tratamiento: 'Puntos auriculares: Corazón, Hígado, Útero/Genitales, Punto ZERO, Shen Men. Acupuntura: SP 10, LV 3, BL 17, PC 6, ST 29. Sangría en Ápice oreja si hay signos de calor.',
+    recomendaciones: 'Alimentos que mueven la Sangre: cúrcuma, azafrán, vinagre, ciruela umeboshi. Evitar frío y sedentarismo. Ejercicio regular que active la circulación. Masajes Tui Na en zonas afectadas.' },
+
+  /* ── FLEMA-CALOR OBSTRUYENDO EL CORAZÓN ── */
+  { id: 'flema_calor_corazon',
+    nombre: 'Flema-Calor obstruyendo el Corazón / Perturbando el Shen',
+    organos: 'Corazón, Pulmón, Bazo',
+    match: { cuerpo:['Rojo','Hinchada'], saburra:['Amarilla','Blanca gruesa'], patron:['Exceso','Calor'], pulso:['Rápido','Resbaladizo','Lleno'] },
+    peso: { cuerpo:3, saburra:3, patron:3, pulso:4 },
+    principio: 'Resolver la Flema, limpiar el Calor, calmar el Shen, abrir los orificio del Corazón.',
+    tratamiento: 'Puntos auriculares: Corazón, Shen Men, Punto ZERO, Máster Tranquilizante, Pulmón, Bazo. Acupuntura: HT 7, PC 5, ST 40, LI 11, GV 26.',
+    recomendaciones: 'Eliminar alimentos que generan Flema: lácteos, azúcares, frituras. Té de jengibre y piel de mandarina. Evitar estimulantes. Meditación mindfulness. Ambiente tranquilo y ordenado.' },
+
+  /* ── DEFICIENCIA DE QI DE BAZO ── */
+  { id: 'bazo_qi_xu',
+    nombre: 'Deficiencia de Qi de Bazo',
+    organos: 'Bazo, Estómago, Pulmón',
+    match: { cuerpo:['Pálido','Normal'], saburra:['Blanca fina'], patron:['Vacío','Interior'], pulso:['Débil','Lento'] },
+    peso: { cuerpo:2, saburra:2, patron:3, pulso:3 },
+    principio: 'Tonificar el Qi de Bazo y Estómago, fortalecer la transformación y transporte.',
+    tratamiento: 'Puntos auriculares: Bazo, Estómago, Punto ZERO, Máster Endocrino. Moxibustión indicada: ST 36, SP 3, BL 20. Acupuntura: CV 12, ST 36, SP 3, SP 6.',
+    recomendaciones: 'Comidas regulares y en horarios fijos, comer sentado y sin apuro. Alimentos fáciles de digerir, cocidos y tibios: arroz, avena, zanahoria, calabaza. Evitar crudos, fríos, lácteos en exceso y sobrecomer.' },
+
+  /* ── CALOR VACÍO (DEFICIENCIA DE YIN + CALOR) ── */
+  { id: 'calor_vacio',
+    nombre: 'Calor de Vacío (Yin Xu con signos de Calor)',
+    organos: 'Riñón, Corazón, Hígado',
+    match: { cuerpo:['Rojo'], saburra:['Sin saburra'], patron:['Vacío','Calor','Yin'], pulso:['Rápido','Débil','Rugoso'] },
+    peso: { cuerpo:3, saburra:3, patron:4, pulso:3 },
+    principio: 'Nutrir el Yin, apagar el Calor de Vacío, calmar el Shen.',
+    tratamiento: 'Puntos auriculares: Riñón, Corazón, Shen Men, Máster Endocrino, Ovario (menopausia). Acupuntura: KI 3, KI 6, HT 6, SP 6, KI 7.',
+    recomendaciones: 'Evitar alimentos calientes y picantes. Favorecer: pera, tofu, leche de almendra, algas, sandía. Dormir bien, evitar trasnochar. Control del estrés. Tai Chi o Qi Gong suave.' },
+
+  /* ── INVASIÓN EXTERNA VIENTO-FRÍO ── */
+  { id: 'viento_frio',
+    nombre: 'Invasión Externa de Viento-Frío',
+    organos: 'Pulmón (Wei Qi)',
+    match: { cuerpo:['Normal','Pálido'], saburra:['Blanca fina'], patron:['Exceso','Frío','Exterior'], pulso:['Superficial','Tenso'] },
+    peso: { cuerpo:1, saburra:2, patron:4, pulso:4 },
+    principio: 'Dispersar el Viento-Frío, liberar el Exterior, tonificar el Wei Qi.',
+    tratamiento: 'Puntos auriculares: Pulmón, Máster Alergia, Ápice oreja, Nariz interna. Acupuntura: LU 7, LI 4, BL 12, GB 20. Moxibustión en BL 12 y GV 14.',
+    recomendaciones: 'Abrigarse bien, evitar corrientes de aire. Caldo de jengibre y cebolla de verdeo. Descanso. Cubrir cuello y espalda. Ventilación controlada del hogar.' },
+
+  /* ── INVASIÓN EXTERNA VIENTO-CALOR ── */
+  { id: 'viento_calor',
+    nombre: 'Invasión Externa de Viento-Calor',
+    organos: 'Pulmón (Wei Qi)',
+    match: { cuerpo:['Rojo','Normal'], saburra:['Blanca fina','Amarilla'], patron:['Exceso','Calor','Exterior'], pulso:['Superficial','Rápido'] },
+    peso: { cuerpo:2, saburra:2, patron:4, pulso:4 },
+    principio: 'Dispersar el Viento-Calor, liberar el Exterior, limpiar el Calor del Pulmón.',
+    tratamiento: 'Puntos auriculares: Pulmón, Ápice oreja (sangría), Máster Alergia, Nariz interna. Acupuntura: LI 4, LU 11, GV 14, LI 11, TB 5.',
+    recomendaciones: 'Líquidos frescos: té de menta, crisantemo, saúco. Evitar alimentos picantes y calientes. Descanso. Ventilación del ambiente. Miel con limón tibio.' },
+
+  /* ── DEFICIENCIA DE QI DE RIÑÓN ── */
+  { id: 'rinon_qi_xu',
+    nombre: 'Deficiencia de Qi/Esencia de Riñón',
+    organos: 'Riñón, Vejiga, huesos, médula',
+    match: { cuerpo:['Pálido','Normal'], saburra:['Blanca fina','Sin saburra'], patron:['Vacío','Yin'], pulso:['Débil','Profundo'] },
+    peso: { cuerpo:2, saburra:2, patron:3, pulso:4 },
+    principio: 'Tonificar y fortalecer la Esencia de Riñón, nutrir el Jing.',
+    tratamiento: 'Puntos auriculares: Riñón, Punto ZERO, Máster Endocrino, Máster Oscilación. Acupuntura: KI 3, BL 23, GV 4, ST 36. Moxibustión en CV 4.',
+    recomendaciones: 'Alimentos que nutren el Jing: semillas de sésamo negro, nueces, ostras, algas, cordero. Descanso adecuado. Evitar exceso sexual y trabajo extenuante. Meditación. Exposición solar moderada.' },
+];
+
+/* ── MOTOR DE COINCIDENCIA ── */
+function calcularPuntaje(patron) {
+    let total = 0;
+    const p = patron.match;
+    const w = patron.peso;
+
+    const pulsoSel   = mtcData.pulso   || [];
+    const cuerpoSel  = mtcData.cuerpo  || [];
+    const saburraSel = mtcData.saburra || [];
+    const patronSel  = mtcData.patron  || [];
+
+    if (p.pulso)   { const matches = p.pulso.filter(v => pulsoSel.includes(v)).length;   total += matches * (w.pulso   || 1); }
+    if (p.cuerpo)  { const matches = p.cuerpo.filter(v => cuerpoSel.includes(v)).length;  total += matches * (w.cuerpo  || 1); }
+    if (p.saburra) { const matches = p.saburra.filter(v => saburraSel.includes(v)).length; total += matches * (w.saburra || 1); }
+    if (p.patron)  { const matches = p.patron.filter(v => patronSel.includes(v)).length;   total += matches * (w.patron  || 1); }
+
+    return total;
+}
+
+function generarDiagnosticoMTC() {
+    const resultado = document.getElementById('mtc-diag-resultado');
+
+    const hayAlgo = (mtcData.pulso   && mtcData.pulso.length)   ||
+                    (mtcData.cuerpo  && mtcData.cuerpo.length)  ||
+                    (mtcData.saburra && mtcData.saburra.length) ||
+                    (mtcData.patron  && mtcData.patron.length);
+
+    if (!hayAlgo) {
+        showToast('Seleccioná al menos un signo de pulso, lengua, saburra o patrón.', 'info');
+        return;
+    }
+
+    // Calcular puntaje para cada patrón
+    const scored = MTC_PATRONES
+        .map(p => ({ ...p, score: calcularPuntaje(p) }))
+        .filter(p => p.score > 0)
+        .sort((a, b) => b.score - a.score);
+
+    resultado.style.display = 'block';
+
+    if (scored.length === 0) {
+        resultado.innerHTML = `<div style="color:#8a6840;font-style:italic;">⚠️ La combinación seleccionada no coincide con ningún patrón predefinido. Intentá agregar más signos diagnósticos.</div>`;
+        return;
+    }
+
+    // Mostrar top 2 diagnósticos
+    const top = scored.slice(0, 2);
+    const principal = top[0];
+    const secundario = top[1];
+
+    // Resumen de signos actuales
+    const signosHTML = [
+        mtcData.pulso   && mtcData.pulso.length   ? `<span>🫀 <b>Pulso:</b> ${mtcData.pulso.join(', ')}</span>` : '',
+        mtcData.cuerpo  && mtcData.cuerpo.length  ? `<span>👅 <b>Lengua:</b> ${mtcData.cuerpo.join(', ')}</span>` : '',
+        mtcData.saburra && mtcData.saburra.length ? `<span>🧂 <b>Saburra:</b> ${mtcData.saburra.join(', ')}</span>` : '',
+        mtcData.patron  && mtcData.patron.length  ? `<span>⚖️ <b>Patrón:</b> ${mtcData.patron.join(', ')}</span>` : '',
+    ].filter(Boolean).join(' &nbsp;·&nbsp; ');
+
+    let html = `
+    <div style="border-bottom:1px solid #d4b8ff;padding-bottom:8px;margin-bottom:10px;font-size:0.72rem;color:#6b5080;">${signosHTML}</div>
+
+    <div style="margin-bottom:12px;">
+        <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;">
+            <span style="background:#5b2d8e;color:#fff;font-size:0.65rem;font-weight:700;padding:2px 7px;border-radius:20px;">DIAGNÓSTICO PRINCIPAL</span>
+            <span style="font-size:0.9rem;font-weight:700;color:#3d1a6e;">🔮 ${principal.nombre}</span>
+        </div>
+        <div style="font-size:0.75rem;color:#5a5a7a;margin-bottom:4px;">🫀 <b>Órganos:</b> ${principal.organos}</div>
+        <div style="font-size:0.75rem;margin-bottom:6px;">⚡ <b>Principio de tratamiento:</b> ${principal.principio}</div>
+        <div style="background:#f0e8ff;border-left:3px solid #8e44ad;padding:6px 10px;border-radius:0 6px 6px 0;font-size:0.74rem;margin-bottom:6px;">
+            <b>🫁 Puntos y técnicas sugeridas:</b><br>${principal.tratamiento}
+        </div>
+        <div style="background:#fdf6e3;border-left:3px solid #d4a017;padding:6px 10px;border-radius:0 6px 6px 0;font-size:0.74rem;">
+            <b>🌿 Recomendaciones:</b><br>${principal.recomendaciones}
+        </div>
+    </div>`;
+
+    if (secundario) {
+        html += `
+    <div style="border-top:1px dashed #c9aff0;padding-top:10px;opacity:0.85;">
+        <div style="display:flex;align-items:center;gap:6px;margin-bottom:5px;">
+            <span style="background:#a97ec8;color:#fff;font-size:0.65rem;font-weight:700;padding:2px 7px;border-radius:20px;">DIAGNÓSTICO DIFERENCIAL</span>
+            <span style="font-size:0.82rem;font-weight:700;color:#5b2d8e;">🔹 ${secundario.nombre}</span>
+        </div>
+        <div style="font-size:0.73rem;color:#5a5a7a;margin-bottom:4px;">🫀 <b>Órganos:</b> ${secundario.organos}</div>
+        <div style="font-size:0.73rem;">⚡ <b>Principio:</b> ${secundario.principio}</div>
+    </div>`;
+    }
+
+    html += `<div style="margin-top:10px;font-size:0.67rem;color:#a09ab0;font-style:italic;">⚠️ Este diagnóstico es orientativo. Confirmá siempre con la anamnesis completa del paciente.</div>`;
+
+    resultado.innerHTML = html;
+}
+
 </script>
 
 
@@ -5718,10 +5970,10 @@ function cerrarSesion() {
   document.getElementById('auth-error').textContent = '';
 }
 
-    /* ── SERVICE WORKER para PWA instalable ── */
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('sw.js').catch(() => {});
-    }
+    /* ── OFFLINE: este archivo HTML es autónomo (todo embebido).
+       Funciona offline en tablet/móvil sin necesidad de Service Worker.
+       El registro de SW desde Blob URL no funciona en Safari iOS,
+       por eso se omite — el archivo ya funciona sin conexión. ── */
 
 </script>
 
